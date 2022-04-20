@@ -8,7 +8,12 @@ defmodule Teletubbybot.Commands do
   end
 
   Cogs.def shrek do
-    word = FileRead.random_quote()
+    word = FileRead.random_quote("shrek")
     Cogs.say(word)
+  end
+
+  Cogs.def bee do
+    sentence = FileRead.random_quote("bee")
+    Cogs.say(sentence)
   end
 end
